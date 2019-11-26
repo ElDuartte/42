@@ -1,0 +1,20 @@
+Credentials cache: API:F0635A2B-5849-4BAD-B15E-51A96738FA44
+        Principal: jduarte-@42MADRID.COM
+
+  Issued                Expires               Principal
+Nov 11 19:34:02 2019  Nov 12 05:33:13 2019  krbtgt/42MADRID.COM@42MADRID.COM
+sh-3.2$ kinit -l 90h -r 5d jduarte-
+jduarte-@42MADRID.COM's password:
+
+Credentials cache: API:4FCFF026-BFF5-4989-9C38-A6D2CE07EBD9
+        Principal: jduarte-@42MADRID.COM
+
+  Issued                Expires               Principal
+Nov 12 17:19:47 2019  Nov 13 03:19:47 2019  krbtgt/42MADRID.COM@42MADRID.COM
+
+
+Credentials cache: API:253148F5-B05C-4B31-80A9-EAD3406E55E7
+        Principal: jduarte-@42MADRID.COM
+
+  Issued                Expires             Flags    Principal
+Nov 13 13:31:43 2019  Nov 13 23:31:43 2019  FPRIA  krbtgt/42MADRID.COM@42MADRID.COM
