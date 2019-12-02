@@ -1,23 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_trio.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jduarte- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/21 17:01:40 by jduarte-          #+#    #+#             */
-/*   Updated: 2019/11/21 17:45:50 by jduarte-         ###   ########.fr       */
+/*   Created: 2019/11/30 19:16:58 by jduarte-          #+#    #+#             */
+/*   Updated: 2019/12/01 14:33:07 by jduarte-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
-void	numeros(void)
+#include <unistd.h>
+/*
+int		ft_strlen(char *str)
 {
-	char a = '0';
-	
-	while(a <= '9')
+	int separator;
+
+	separator = 0;
+	while (str[separator] != '\0')
 	{
-		 write(1, &a, 1);
-		 a++;
+		separator++;
 	}
+	return (separator);
+}*/
+
+int		ft_trio(char *num)
+{
+	char i;
+	num[len - i];
+	if (len 
 }

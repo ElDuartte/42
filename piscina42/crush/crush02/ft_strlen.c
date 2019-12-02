@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jduarte- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/21 16:16:40 by jduarte-          #+#    #+#             */
-/*   Updated: 2019/11/21 16:59:02 by jduarte-         ###   ########.fr       */
+/*   Created: 2019/12/01 12:51:42 by jduarte-          #+#    #+#             */
+/*   Updated: 2019/12/01 14:33:14 by jduarte-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
-void	letras(void)
-{
-	char c = 'z';
+int     ft_strlen(char *str)
+ {
+	 int separator;
 
-	while(c >= 'a')
-	{
-		write(1, &c, 1);
-		c--;
-	}
+	 separator = 0;
+	 while (str[separator] != '\0')
+	 {
+		 separator++;
+	 }
+	 return (separator);
+}
+
+int main()
+{
+	ft_strlen('1000000000000000000000000000000000000');
+	return (0);
 }
