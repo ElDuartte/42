@@ -1,25 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jduarte- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/12/02 14:17:05 by jduarte-          #+#    #+#             */
-/*   Updated: 2019/12/02 18:59:35 by jduarte-         ###   ########.fr       */
+/*   Created: 2019/12/04 04:00:45 by jduarte-          #+#    #+#             */
+/*   Updated: 2019/12/04 04:46:57 by jduarte-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-char	*ft_strcpy(char *dest, char *src)
+int		ft_str_is_printable(char *str)
 {
 	int i;
 
 	i = 0;
-	while (src[i] != '\0')
+	while (str[i] != '\0')
 	{
-		dest[i] = src[i];
+		if (!(str[i] >= 32 && str[i] <= 126))
+			return (0);
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	return (1);
+}
+
+#include <stdio.h>
+
+int main()
+{
+	char a[] = "®";
+	printf("%i", ft_str_is_printable(a));
 }
